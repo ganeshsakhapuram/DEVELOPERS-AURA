@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Course - Tag Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      padding: 30px;
+    }
+    h1 {
+      color: #c62828;
+      text-align: center;
+    }
+    .tag-list {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: auto;
+    }
+    .info-section {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      max-width: 900px;
+      margin: 40px auto;
+      border: 1px solid #ccc;
+    }
+    .info-section h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .info-section h3 {
+      color: #1565c0;
+      margin-top: 20px;
+    }
+    .info-section ul {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    .info-section li strong {
+      color: #2e7d32;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 20px;
+    }
+    .nav-buttons a {
+      background-color: #4db6ac;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #26a69a;
+    }
+    .home-button {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .home-button a {
+      background-color: #0288d1;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Quicksand', sans-serif;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    .home-button a:hover {
+      background-color: #0277bd;
+    }
+  </style>
+</head>
+<body>
+
+<div class="info-section" id="css-info">
+  <h2>CSS Tags (Properties) - Quick Guide</h2>
+
+  <h3>What is CSS?</h3>
+  <p>
+    CSS is the language used to style and design webpages. While HTML provides the structure,
+    CSS controls how everything looks and feels—like colors, fonts, layouts, spacing, and animations.
+    It's what turns a basic HTML page into a visually appealing and user-friendly website.
+  </p>
+
+  <h3>Uses of CSS:</h3>
+  <ul>
+    <li>Styling text: fonts, sizes, colors</li>
+    <li>Creating layouts: grids, columns, spacing</li>
+    <li>Adding background colors, images, and gradients</li>
+    <li>Making webpages responsive for phones and tablets</li>
+    <li>Creating hover effects, transitions, and animations</li>
+    <li>Hiding or showing elements based on screen size</li>
+  </ul>
+
+  <h3>Extra Information About CSS:</h3>
+  <ul>
+    <li><strong>Inline:</strong> Applied directly to elements (not recommended for big projects)</li>
+    <li><strong>Internal:</strong> Written within the HTML document</li>
+    <li><strong>External:</strong> Linked as a separate file (most common and best practice)</li>
+  </ul>
+
+  <h3>Why "Cascading"?</h3>
+  <p>
+    The word "Cascading" means styles can override each other based on priority.
+    For example, inline styles can override external styles unless managed using specificity and importance.
+  </p>
+
+  <h3>Role in Web Development:</h3>
+  <ul>
+    <li>Separates content (HTML) from design (CSS)</li>
+    <li>Makes code cleaner and easier to manage</li>
+    <li>Allows reusable styles across multiple pages</li>
+    <li>Enables responsive and mobile-friendly design</li>
+  </ul>
+
+  <h3>CSS Properties (with Examples):</h3>
+  <ul>
+    <li><strong>color</strong> – <em>color: red;</em></li>
+    <li><strong>background-color</strong> – <em>background-color: yellow;</em></li>
+    <li><strong>font-size</strong> – <em>font-size: 20px;</em></li>
+    <li><strong>font-family</strong> – <em>font-family: Arial;</em></li>
+    <li><strong>font-weight</strong> – <em>font-weight: bold;</em></li>
+    <li><strong>text-align</strong> – <em>text-align: center;</em></li>
+    <li><strong>margin</strong> – <em>margin: 10px;</em></li>
+    <li><strong>padding</strong> – <em>padding: 20px;</em></li>
+    <li><strong>border</strong> – <em>border: 1px solid black;</em></li>
+    <li><strong>width</strong> – <em>width: 300px;</em></li>
+    <li><strong>height</strong> – <em>height: 200px;</em></li>
+    <li><strong>display</strong> – <em>display: flex;</em></li>
+    <li><strong>position</strong> – <em>position: absolute;</em></li>
+    <li><strong>top</strong> – <em>top: 50px;</em></li>
+    <li><strong>left</strong> – <em>left: 100px;</em></li>
+    <li><strong>right</strong> – <em>right: 0;</em></li>
+    <li><strong>bottom</strong> – <em>bottom: 10px;</em></li>
+    <li><strong>z-index</strong> – <em>z-index: 10;</em></li>
+    <li><strong>overflow</strong> – <em>overflow: scroll;</em></li>
+    <li><strong>box-shadow</strong> – <em>box-shadow: 2px 2px 5px gray;</em></li>
+    <li><strong>text-shadow</strong> – <em>text-shadow: 1px 1px black;</em></li>
+    <li><strong>border-radius</strong> – <em>border-radius: 10px;</em></li>
+    <li><strong>opacity</strong> – <em>opacity: 0.5;</em></li>
+    <li><strong>visibility</strong> – <em>visibility: hidden;</em></li>
+    <li><strong>background-image</strong> – <em>background-image: url('img.jpg');</em></li>
+    <li><strong>flex</strong> – <em>flex: 1;</em></li>
+    <li><strong>align-items</strong> – <em>align-items: center;</em></li>
+    <li><strong>justify-content</strong> – <em>justify-content: space-between;</em></li>
+    <li><strong>grid-template-columns</strong> – <em>grid-template-columns: 1fr 2fr;</em></li>
+    <li><strong>gap</strong> – <em>gap: 10px;</em></li>
+    <li><strong>cursor</strong> – <em>cursor: pointer;</em></li>
+    <li><strong>transition</strong> – <em>transition: all 0.3s ease;</em></li>
+    <li><strong>animation</strong> – <em>animation: slide 2s infinite;</em></li>
+  </ul>
+</div>
+
+<div class="nav-buttons">
+  <a href="html-course.html">← Back to HTML</a>
+  <a href="javascript-course.html">Next →</a>
+</div>
+
+<div class="home-button">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+</body>
+</html>

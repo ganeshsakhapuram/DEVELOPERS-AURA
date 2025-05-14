@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Developers Aura</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #e0f7fa, #fff9c4);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 36px;
+      color: #c62828;
+      margin-bottom: 10px;
+      font-family: 'Zilla Slab', serif;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-image: url('https://images.unsplash.com/photo-1526378722484-cc5c8e3b74c5');
+      background-size: cover;
+      background-position: center;
+      color: navy;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-family: 'Zilla Slab', serif;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .decorative-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+      background: #ffecb3;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .decorative-icons img {
+      width: 80px;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .decorative-icons img:hover {
+      transform: scale(1.2) rotate(5deg);
+      animation: bounce 0.6s;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      color: #0277bd;
+      margin-bottom: 20px;
+      font-family: 'Zilla Slab', serif;
+      animation: fadeUp 1.5s ease-out;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      width: 250px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transform: scale(0.8);
+      opacity: 0;
+      animation: zoomIn 0.8s forwards;
+    }
+
+    .card:nth-child(2) { animation-delay: 0.3s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: #fce4ec;
+    }
+
+    .card img {
+      width: 2cm;
+      height: 2cm;
+      margin: 20px auto 10px;
+      display: block;
+    }
+
+    .card h4 {
+      margin: 15px;
+      color: #333;
+      font-family: 'Zilla Slab', serif;
+    }
+    .instagram-footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .instagram-footer h4 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      font-family: 'Zilla Slab', serif;
+    }
+
+    .instagram-footer p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .instagram-footer a {
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .instagram-footer a:hover {
+      background: #c62828;
+      transform: scale(1.1);
+    }
+    .instagram-footer{background-color: #0277bd;}
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="title">Developers Aura</h1>
+
+  </header>
+
+  <section class="hero">
+    <h2>Learn to Build Modern Websites</h2>
+    <p>Master HTML, CSS, and JavaScript with Web Developer Aura</p>
+  </section>
+
+  <section class="decorative-icons">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Icon" />
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon" />
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon" />
+  </section>
+
+  <section class="section">
+    <h3>Start Learning</h3>
+    <div class="cards">
+      <div class="card" onclick="location.href='html-course.html';">
+        <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="HTML Course" />
+        <h4>HTML Basics</h4>
+      </div>
+      <div class="card" onclick="location.href='css-course.html';">
+        <img src="https://e1.pngegg.com/pngimages/326/868/png-clipart-css3-badge-blue-and-white-css-icon-thumbnail.png" alt="CSS Course" />
+        <h4>CSS Styling</h4>
+      </div>
+      <div class="card" onclick="location.href='js-course.html';">
+        <img src="https://blog.magmalabs.io/wp-content/uploads/2012/06/JAVASCRIPT-EVOLUTION-BACKBONECONF.png" alt="JavaScript Course" />
+        <h4>JavaScript Power</h4>
+      </div>
+    </div>
+  </section>
+  <section class="instagram-footer">
+    <h4>DO FOLLOW </h4>
+    <p>Stay updated and follow us on Instagram for more awesome tutorials!</p>
+    <a href="https://www.instagram.com/the_developer_45/" target="_blank">Follow @the_developer_45</a>
+  </section>
+
+</body>
+</html>
